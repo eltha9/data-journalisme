@@ -156,7 +156,7 @@ body
     padding: 2.4rem 0;
 }
 
-.article .articletitle h2
+.title h2
 {
     color: #282828;
     font-size: 2.8rem;
@@ -164,7 +164,7 @@ body
     line-height: 3.4rem
 }
 
-.article .articletitle .titleunderline
+.underline
 {
     width: 15%;
     margin: 3% 0 5% 0;
@@ -221,3 +221,7 @@ body
 
 
 /**-------Comments-------**/
+.comments
+{
+    margin: 3.2rem 0;
+}
