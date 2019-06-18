@@ -1,10 +1,16 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+/**-------Banner-------**/
+
 /*
 **Banner
 **/
 
 .banner
 {
-    height: 40vh;
+    height: 42vh;
     width: 100vw;
 }
 
@@ -66,4 +72,56 @@
     width: 20%;
     position: relative;
     z-index: 50
+}
+
+/**-------Article-------**/
+
+/*
+**Article
+**/
+
+.article
+{
+    width: 100vw;
+    margin: 5%
+}
+
+/*
+**Author
+**/
+
+.article .author
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.article .author img
+{
+    width: 10%;
+    border-radius: 100%
+}
+
+.article .author .authorinfo
+{
+    padding: 2%
+}
+.article .author .authorinfo .authorname
+{
+    padding: 0.5em 0
+}
+
+.article .author .authorinfo .authorname span
+{
+    font-size: 2em;
+    padding: 1em 0
+}
+
+
+.article .author .authorinfo .date small
+{
+    color: #9E9E9E;
+    font-size: 1.5em;
+    font-weight: 100;
 }
