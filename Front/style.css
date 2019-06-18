@@ -31,7 +31,7 @@ body
 {
     width: 100%;
     height: 8%;
-    margin: 10% 0;;
+    margin: 10% 0;
     padding: 0px 2% 0 7%;
     position: absolute;
     top: 10vh;
@@ -99,7 +99,7 @@ body
 .article
 {        
     width: 100vw;
-    padding: 10% 5.7%;
+    padding: 10% 2.4rem;
 }
 
 /**
@@ -115,13 +115,14 @@ body
 
 .article .author img
 {
-    width: 10%;
+    width: 4.8rem;
+    margin-right: 1rem;
     border-radius: 100%
 }
 
 .article .author .authorinfo
 {
-    padding: 2%
+    padding-bottom: 0.4rem;
 }
 .article .author .authorinfo .authorname
 {
@@ -150,8 +151,8 @@ body
 
 .article .articletitle
 {
-    width: 80%;
-    margin: 5% 0
+    width: 100%;
+    padding: 2.4rem 0;
 }
 
 .article .articletitle h2
@@ -172,11 +173,6 @@ body
 /**
 **Content
 **/
-
-.article .articlecontent 
-{
-    width: 80%;
-}
 
 .article .articlecontent p
 {
