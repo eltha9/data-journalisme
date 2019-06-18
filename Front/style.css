@@ -100,7 +100,8 @@ body
 .article
 {        
     width: 100vw;
-    padding: 10% 2.4rem;
+    padding: 0 2.4rem;
+    margin-top: 3.2rem;
 }
 
 /**
@@ -260,7 +261,7 @@ body
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    margin: 1.4rem 0 3.2rem 0
+    padding-top: 3.2rem;
 }
 
 .article .comments .commentsmenu a
