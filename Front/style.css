@@ -1,3 +1,4 @@
+
 body
 {
     font-family: 'Poppins', sans-serif;
@@ -174,6 +175,13 @@ body
 **Content
 **/
 
+.article .articlecontent
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+}
+
 .article .articlecontent p
 {
     color: #4B4B4B;
@@ -181,3 +189,35 @@ body
     font-weight: 100;
     line-height: 2.4rem;
 }
+
+.article .articlecontent img
+{
+    width: 90vw;
+    padding: 2.2rem 0
+}
+
+/**-------More-------**/
+
+.more h3
+{
+    color: #282828;
+    font-size: 2.2rem
+}
+
+.more .sidescroll
+{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 1.6rem 0;
+}
+
+.more .sidescroll img
+{
+    display: inline-block;
+    width: 80%;
+    padding-right: 2.4rem
+}
+
+
+/**-------Comments-------**/
