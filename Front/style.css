@@ -104,7 +104,7 @@ body
 }
 
 /**
-**Author
+**Article Author
 **/
 
 .article .author
@@ -147,7 +147,7 @@ body
 
 
 /**
-**Title
+**Article Title
 **/
 
 .article .articletitle
@@ -172,7 +172,7 @@ body
 }
 
 /**
-**Content
+**Article Content
 **/
 
 .article .articlecontent
@@ -227,8 +227,46 @@ body
     margin: 3.2rem 0;
 }
 
+/**
+**Comments Author
+**/
 
 .article .comments .author
 {
-    margin: 2.4rem 0
+    margin: 2.4rem 0 0.6rem 0px;
+}
+
+
+.article .comments .author .authorinfo
+{
+    width: 100%;
+}
+
+.article .comments .author .authorinfo .authorwrap
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+
+/**
+**Comments More
+**/
+
+.article .comments .commentsmore
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 1.4rem 0 3.2rem 0
+}
+
+.article .comments .commentsmore a
+{
+    color: #8FD9F2;
+    font-size: 1.8rem;
+    font-weight : 300;
+    text-decoration: none
 }
