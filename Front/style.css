@@ -130,7 +130,7 @@ body
     padding: 0.2em 0;
 }
 
-.article .author .authorinfo .authorname span
+.article .author span
 {
     color: #282828;
     font-size: 1.6rem;
@@ -138,7 +138,7 @@ body
 }
 
 
-.article .author .authorinfo .date small
+.article .date small
 {
     color: #9E9E9E;
     font-size: 1.2rem;
@@ -198,13 +198,13 @@ body
 
 /**-------More-------**/
 
-.more h3
+.article h3
 {
     color: #282828;
     font-size: 2.2rem
 }
 
-.more .sidescroll
+.article .more .sidescroll
 {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -212,7 +212,7 @@ body
     margin: 1.6rem 0;
 }
 
-.more .sidescroll img
+.article .more .sidescroll img
 {
     display: inline-block;
     width: 80%;
@@ -222,7 +222,7 @@ body
 
 /**-------Comments-------**/
 
-.comments
+.article .comments
 {
     margin: 3.2rem 0;
 }
@@ -251,10 +251,10 @@ body
 
 
 /**
-**Comments More
+**Menu Comments 
 **/
 
-.article .comments .commentsmore
+.article .comments .commentsmenu
 {
     display: flex;
     flex-direction: row;
@@ -263,10 +263,88 @@ body
     margin: 1.4rem 0 3.2rem 0
 }
 
-.article .comments .commentsmore a
+.article .comments .commentsmenu a
 {
     color: #8FD9F2;
     font-size: 1.8rem;
     font-weight : 300;
     text-decoration: none
 }
+
+/**-------Other-------**/
+
+.article .other
+{
+    width: 100%;
+}
+
+.article .other .otherwrap
+{
+    height: 16vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.6rem 0 
+}
+
+/**
+**Other Image 
+**/
+
+.article .other .otherwrap .otherimg
+{
+    width: 40%;
+    margin: 1.6rem 1.6rem 0 0;
+}
+
+.article .other .otherwrap .otherimg img
+{
+    outline: 0.5rem solid #FFFFFF;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+.article .other .otherwrap .otherimg .background
+{
+    position: relative;
+    z-index: -5;
+    transform: translateX(2.4rem) translateY(-10.4rem);
+    height: 8.8rem;
+    width: 100%;
+}
+
+
+.article .other .otherwrap .otherimg .other1
+{
+    background-color: #FFD972;
+}
+
+
+
+.article .other .otherwrap .otherimg .other2
+{
+    background-color: #F1D8E0;
+}
+
+.article .other .otherwrap .otherimg .other3
+{
+    background-color: #BEDED4;
+}
+
+/**
+**Other Title 
+**/
+
+.article .other .otherwrap h3,.article .other .otherwrap span,.article .other .otherwrap small
+{
+    margin: 0.4rem 0 
+}
+
+.article .other .otherwrap .author span
+{
+    color: #757575
+}
+
