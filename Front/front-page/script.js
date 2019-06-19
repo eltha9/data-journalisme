@@ -1,9 +1,18 @@
-const video = document.querySelector('.video')
-const videoBtn = document.querySelector('button')
 
+const menu = document.querySelector('.open-menu')
+const menuBtn = document.querySelector('.burger-menu')
 
-videoBtn.addEventListener('click', ()=>
+let menuOpen=false 
+
+menuBtn.addEventListener('click', ()=>
 {
-    video.play()
-    video.requestFullscreen()
+    if(menuOpen)
+    {
+        menu.classList.remove('open')
+        menuOpen=false
+    } else
+    {
+        menu.classList.add('open')
+        menuOpen=true
+    }
 })
