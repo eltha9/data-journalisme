@@ -95,6 +95,7 @@ header .search-menu img, header .burger-menu img
 .other
 {
     width: 100%;
+    margin-bottom: 3.2rem
 }
 
 .other .wraps .other-wrap
@@ -167,7 +168,24 @@ header .search-menu img, header .burger-menu img
     color: #757575
 }
 
+/**-------Sidescroll-------**/
 
+.sidescroll
+{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 1.6rem 0;
+}
+
+/**-------Cards-------**/
+
+.front-page .card .card-author small
+{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #9E9E9E;
+}
 
 /**--------------------------------
 --------------FRONT PAGE---------
@@ -237,7 +255,7 @@ header .search-menu img, header .burger-menu img
 **Daily card
 **/
 
-.front-page .card
+.front-page .daily-article .card
 {
     width: 80%;
     height: 8.8rem;
@@ -256,7 +274,7 @@ header .search-menu img, header .burger-menu img
     font-size: 1.6rem
 }
 
-.front-page .card .card-specs
+.front-page .daily-article .card .card-specs
 {
     display: flex;
     flex-direction: row;
@@ -264,25 +282,19 @@ header .search-menu img, header .burger-menu img
     justify-content: space-between
 }
 
-.front-page .card .card-specs .card-author small
-{
-    font-size: 1.2rem;
-    font-weight: 200;
-    color: #9E9E9E;
-}
 
 /**
 **Buttons
 **/
 
-.front-page .card .card-specs .card-btn
+.front-page .daily-article .card .card-specs .card-btn
 {
     display: flex;
     flex-direction: row;
 }
 
 
-.front-page .card .card-specs .card-btn img
+.front-page .daily-article .card .card-specs .card-btn img
 {
     margin-left: 1.6rem
 }
@@ -321,6 +333,39 @@ header .search-menu img, header .burger-menu img
 {
     color:  #fff;
     background-color: #95D9C3;
+}
+
+
+/**-------Popular Articles-------**/
+
+/**
+**General
+**/
+.front-page .popular
+{
+    width: 100%;
+}
+
+.front-page .popular .sidescroll .wrap
+{
+    display: inline-block;
+    width: 80%;
+    padding-right: 2.4rem;
+}
+
+.front-page .popular .sidescroll .card-img img
+{
+    width: 100%;
+}
+
+.front-page .popular .sidescroll .wrap .card
+{
+    height: 10.4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 4%;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1)
 }
 
 
@@ -517,14 +562,6 @@ header .search-menu img, header .burger-menu img
 
 /**-------More-------**/
 
-
-.article .more .sidescroll
-{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    margin: 1.6rem 0;
-}
 
 .article .more .sidescroll img
 {
