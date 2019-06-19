@@ -139,9 +139,8 @@ header .burger-menu
 header .burger-menu span 
 {
     display: block;
-    height: 0.4rem;
-    position: relative;
-    margin: 0.5rem auto;
+    position: absolute;
+    height: 0.2rem;
     width: 100%;
     background: #282828;
     opacity: 1;
