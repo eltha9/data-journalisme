@@ -1,356 +1,58 @@
 
+/*
+Theme Name: Data-Journalism-santé
+Author: Team 20
+Author URI: http://ww2.elph.fr
+Description: Bienvenue sur le thème wordpress crée par l'équipe 20, thème la santé et surtout comment... je laisse la suite pour l'oral ;p
+*/
+
 body
 {
     font-family: 'Poppins', sans-serif;
 }
 
-.menu
+/**-------Header-------**/
+
+header
 {
-    background: #fff;
     height: 10vh;
     width: 100vw;
-}
-
-/**-------Banner-------**/
-
-/*
-**Banner
-**/
-
-.banner
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 4px 24px rgba(51,51,51, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}   
+header .menu-bar
 {
-    height: 42vh;
-    width: 100vw;
-    overflow: hidden;
+    height: 8vh;
+    width: 8vw;
+    margin: 0 6vw;
 }
 
-/**
-**Nav
-**/
-
-.banner .nav
-{
-    width: 100%;
-    height: 8%;
-    margin: 10% 0;
-    padding: 0px 2% 0 7%;
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    z-index: 100;
-}
-
-.banner .nav svg
-{
-    height: 40%;
-}
-
-
-.banner .nav .justify-left 
-{
-    float: left;
-}
-
-.banner .nav .justify-right 
-{
-    float: right;
-    margin-right: 5%;
-}
-
-/**
-**Video
-**/
-
-.banner .video
-{
-    width: 100vw;
-    position: absolute;
-    top: 10vh;
-}
-
-.banner .thumbnail img
-{
-    width: 100vw;
-    position: absolute;
-    top: 10vh;
-    z-index: 100
-}
-
-
-.banner button
+header .menu-bar img
 {
     height: 100%;
     width: 100%;
 }
 
-.banner button svg
+header .menu-search
 {
-    height: 20%;
-    width: 20%;
-    position: relative;
-    z-index: 300;
+    height: 8vh;
+    width: 8vw;
+    margin: 0 6vw;
+}
+        
+header .menu-search img
+{
+    height: 100%;
+    width: 100%;
 }
 
-/**-------Article-------**/
-
-/**
-**General
-**/
-
-.article
-{        
+.header-margin
+{
+    height: 10vh;
     width: 100vw;
-    padding: 0 2.4rem;
-    margin-top: 3.2rem;
 }
-
-/**
-**Article Author
-**/
-
-.article .author
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center
-}
-
-.article .author img
-{
-    width: 4.8rem;
-    margin-right: 1rem;
-    border-radius: 100%
-}
-
-.article .author .authorinfo
-{
-    padding-bottom: 0.4rem;
-}
-.article .author .authorinfo .authorname
-{
-    padding: 0.2em 0;
-}
-
-.article .author span
-{
-    color: #282828;
-    font-size: 1.6rem;
-    font-weight: 300;
-}
-
-
-.article .date small
-{
-    color: #9E9E9E;
-    font-size: 1.2rem;
-    font-weight: 200;
-}
-
-
-/**
-**Article Title
-**/
-
-.article .articletitle
-{
-    width: 100%;
-    padding: 2.4rem 0;
-}
-
-.article .title h2
-{
-    color: #282828;
-    font-size: 2.8rem;
-    font-weight: 500;
-    line-height: 3.4rem
-}
-
-.article .underline
-{
-    width: 15%;
-    margin: 3% 0 5% 0;
-    border-bottom: 0.3rem solid #BEEFFF;
-}
-
-/**
-**Article Content
-**/
-
-.article .articlecontent
-{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2.4rem;
-}
-
-.article .content p
-{
-    color: #4B4B4B;
-    font-size: 1.6rem;
-    font-weight: 100;
-    line-height: 2.4rem;
-}
-
-.article .articlecontent img
-{
-    width: 90vw;
-    padding: 2.2rem 0
-}
-
-/**-------More-------**/
-
-.article h3
-{
-    color: #282828;
-    font-size: 2.2rem
-}
-
-.article .more .sidescroll
-{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    margin: 1.6rem 0;
-}
-
-.article .more .sidescroll img
-{
-    display: inline-block;
-    width: 80%;
-    padding-right: 2.4rem
-}
-
-
-/**-------Comments-------**/
-
-.article .comments
-{
-    margin: 3.2rem 0;
-}
-
-/**
-**Comments Author
-**/
-
-.article .comments .author
-{
-    margin: 2.4rem 0 0.6rem 0px;
-}
-
-
-.article .comments .author .authorinfo
-{
-    width: 100%;
-}
-
-.article .comments .author .authorinfo .authorwrap
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-}
-
-
-/**
-**Menu Comments 
-**/
-
-.article .comments .commentsmenu 
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.2rem;
-}
-
-.article .comments .commentsmenu button
-{
-    height: 2.4rem;
-}
-
-.article .comments .commentsmenu a
-{
-    color: #8FD9F2;
-    font-size: 1.8rem;
-    font-weight : 300;
-    text-decoration: none
-}
-
-/**-------Other-------**/
-
-.article .other
-{
-    width: 100%;
-}
-
-.article .other .otherwrap
-{
-    height: 16vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1.6rem 0 
-}
-
-/**
-**Other Image 
-**/
-
-.article .other .otherwrap .otherimg
-{
-    width: 40%;
-    margin: 1.6rem 1.6rem 0 0;
-}
-
-.article .other .otherwrap .otherimg img
-{
-    outline: 0.5rem solid #FFFFFF;
-    width: 100%;
-    position: relative;
-    z-index: 5;
-    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
-}
-
-
-.article .other .otherwrap .otherimg .background
-{
-    position: relative;
-    z-index: -5;
-    transform: translateX(2.4rem) translateY(-10.4rem);
-    height: 8.8rem;
-    width: 100%;
-}
-
-
-.article .other .otherwrap .otherimg .other1
-{
-    background-color: #FFD972;
-}
-
-
-
-.article .other .otherwrap .otherimg .other2
-{
-    background-color: #F1D8E0;
-}
-
-.article .other .otherwrap .otherimg .other3
-{
-    background-color: #BEDED4;
-}
-
-/**
-**Other Title 
-**/
-
-.article .other .otherwrap h3,.article .other .otherwrap span,.article .other .otherwrap small
-{
-    margin: 0.4rem 0 
-}
-
-.article .other .otherwrap .author span
-{
-    color: #757575
-}
-
