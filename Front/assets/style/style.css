@@ -199,6 +199,129 @@ header .search-menu img, header .burger-menu img
     font-weight: 200;
 }
 
+.front-page h1
+{
+    font-size: 3.2rem;
+}
+/**-------Daily Article-------**/
+
+/**
+**Daily General
+**/
+
+.front-page .dailyarticle
+{
+    width: 100%;
+}
+
+/**
+**Daily title
+**/
+
+.front-page .dailyarticle .dailytitle h1
+{
+    margin: 1.2rem 0;
+}
+
+/**
+**Daily img
+**/
+
+.front-page .dailyarticle img
+{
+    width: 100%;
+    margin: 1.2rem 0;
+}
+
+/**
+**Daily card
+**/
+
+.front-page .card
+{
+    width: 80%;
+    height: 8.8rem;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -6rem;
+    background-color: #fff;
+    padding: 4%;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
+}
+
+.front-page .card .cardtitle h4
+{
+    font-size: 1.6rem
+}
+
+.front-page .card .cardspecs
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between
+}
+
+.front-page .card .cardspecs .cardauthor small
+{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #9E9E9E;
+}
+
+/**
+**Buttons
+**/
+
+.front-page .card .cardspecs .cardbtn
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.front-page .card .cardspecs .cardbtn img
+{
+    margin-left: 1.6rem
+}
+
+
+/**-------Filters-------**/
+
+/**
+**General
+**/
+
+.front-page .filters
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 3.2rem 0
+}
+
+.front-page .filters a
+{
+    color:  #95D9C3;
+    width: 26%;
+    height: 20%;
+    border: 1px solid #95D9C3;
+    border-radius: 0.3rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.4rem;
+}
+
+.front-page .filters a:active
+{
+    color:  #fff;
+    background-color: #95D9C3;
+}
 
 
 /**--------------------------------
