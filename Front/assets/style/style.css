@@ -97,7 +97,7 @@ header .search-menu img, header .burger-menu img
     width: 100%;
 }
 
-.other .wraps .otherwrap
+.other .wraps .other-wrap
 {
     height: 16vh;
     display: flex;
@@ -110,13 +110,13 @@ header .search-menu img, header .burger-menu img
 **Other Image 
 **/
 
-.other .wraps .otherwrap .otherimg
+.other .wraps .other-wrap .other-img
 {
     width: 40%;
     margin: 1.6rem 1.6rem 0 0;
 }
 
-.other .wraps .otherwrap .otherimg img
+.other .wraps .other-wrap .other-img img
 {
     outline: 0.5rem solid #FFFFFF;
     width: 100%;
@@ -126,7 +126,7 @@ header .search-menu img, header .burger-menu img
 }
 
 
-.other .wraps .otherwrap .otherimg .background
+.other .wraps .other-wrap .other-img .background
 {
     position: relative;
     z-index: -5;
@@ -136,19 +136,19 @@ header .search-menu img, header .burger-menu img
 }
 
 
-.other .wraps .otherwrap .otherimg .other1
+.other .wraps .other-wrap .other-img .other1
 {
     background-color: #FFD972;
 }
 
 
 
-.other .wraps .otherwrap .otherimg .other2
+.other .wraps .other-wrap .other-img .other2
 {
     background-color: #F1D8E0;
 }
 
-.other .wraps .otherwrap .otherimg .other3
+.other .wraps .other-wrap .other-img .other3
 {
     background-color: #BEDED4;
 }
@@ -157,12 +157,12 @@ header .search-menu img, header .burger-menu img
 **Other Title 
 **/
 
-.other .otherwrap h3, .other .otherwrap span, .other .otherwrap small
+.other .other-wrap h3, .other .other-wrap span, .other .other-wrap small
 {
     margin: 0.4rem 0 
 }
 
-.other .otherwrap .author span
+.other .other-wrap .author span
 {
     color: #757575
 }
@@ -209,7 +209,7 @@ header .search-menu img, header .burger-menu img
 **Daily General
 **/
 
-.front-page .dailyarticle
+.front-page .daily-article
 {
     width: 100%;
 }
@@ -218,7 +218,7 @@ header .search-menu img, header .burger-menu img
 **Daily title
 **/
 
-.front-page .dailyarticle .dailytitle h1
+.front-page .daily-article .daily-title h1
 {
     margin: 1.2rem 0;
 }
@@ -227,7 +227,7 @@ header .search-menu img, header .burger-menu img
 **Daily img
 **/
 
-.front-page .dailyarticle img
+.front-page .daily-article img
 {
     width: 100%;
     margin: 1.2rem 0;
@@ -251,12 +251,12 @@ header .search-menu img, header .burger-menu img
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
 }
 
-.front-page .card .cardtitle h4
+.front-page .card .card-title h4
 {
     font-size: 1.6rem
 }
 
-.front-page .card .cardspecs
+.front-page .card .card-specs
 {
     display: flex;
     flex-direction: row;
@@ -264,7 +264,7 @@ header .search-menu img, header .burger-menu img
     justify-content: space-between
 }
 
-.front-page .card .cardspecs .cardauthor small
+.front-page .card .card-specs .card-author small
 {
     font-size: 1.2rem;
     font-weight: 200;
@@ -275,14 +275,14 @@ header .search-menu img, header .burger-menu img
 **Buttons
 **/
 
-.front-page .card .cardspecs .cardbtn
+.front-page .card .card-specs .card-btn
 {
     display: flex;
     flex-direction: row;
 }
 
 
-.front-page .card .cardspecs .cardbtn img
+.front-page .card .card-specs .card-btn img
 {
     margin-left: 1.6rem
 }
@@ -440,11 +440,11 @@ header .search-menu img, header .burger-menu img
     border-radius: 100%
 }
 
-.article .author .authorinfo
+.article .author .author-info
 {
     padding-bottom: 0.4rem;
 }
-.article .author .authorinfo .authorname
+.article .author .author-info .author-name
 {
     padding: 0.2em 0;
 }
@@ -469,7 +469,7 @@ header .search-menu img, header .burger-menu img
 **Article Title
 **/
 
-.article .articletitle
+.article .article-title
 {
     width: 100%;
     padding: 2.4rem 0;
@@ -494,7 +494,7 @@ header .search-menu img, header .burger-menu img
 **Article Content
 **/
 
-.article .articlecontent
+.article .article-content
 {
     display: flex;
     flex-direction: column;
@@ -509,7 +509,7 @@ header .search-menu img, header .burger-menu img
     line-height: 2.4rem;
 }
 
-.article .articlecontent img
+.article .article-content img
 {
     width: 90vw;
     padding: 2.2rem 0
@@ -551,12 +551,12 @@ header .search-menu img, header .burger-menu img
 }
 
 
-.article .comments .author .authorinfo
+.article .comments .author .author-info
 {
     width: 100%;
 }
 
-.article .comments .author .authorinfo .authorwrap
+.article .comments .author .author-info .author-wrap
 {
     display: flex;
     flex-direction: row;
@@ -568,7 +568,7 @@ header .search-menu img, header .burger-menu img
 **Menu Comments 
 **/
 
-.article .comments .commentsmenu 
+.article .comments .comments-menu 
 {
     display: flex;
     flex-direction: row;
@@ -577,12 +577,12 @@ header .search-menu img, header .burger-menu img
     height: 3.2rem;
 }
 
-.article .comments .commentsmenu button
+.article .comments .comments-menu button
 {
     height: 2.4rem;
 }
 
-.article .comments .commentsmenu a
+.article .comments .comments-menu a
 {
     color: #8FD9F2;
     font-size: 1.8rem;
