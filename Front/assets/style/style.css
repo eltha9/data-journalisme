@@ -58,17 +58,45 @@ header .open-menu
 {
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    background-color: #fff;
     position: fixed;
     top: -100vh;
     will-change: transform;
     transition: 500ms ease-in-out
 }
 
-
 header .open-menu.open
 {
     transform: translateY(100%)
+}
+
+header .open-menu .inner
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+header .open-menu .inner ul li
+{
+    color: #9E9E9E;
+    font-size: 5.6rem;
+    font-weight: 300;
+    padding: 3.2rem ;
+}
+
+header .open-menu .inner ul li a
+{
+    text-decoration: none;
+}
+
+
+header .open-menu .inner svg
+{
+    width: 75%;
+    position: fixed;
+    right: -50%
 }
 
 /**
