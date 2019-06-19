@@ -286,14 +286,14 @@ header .search-menu img
     width: 100%;
 }
 
-@media(max-width: 568px)
+/* @media(max-width: 568px)
 {
     .other .wraps .other-wrap .other-img .background
     {
         height: 4.8rem;
         transform: translateX(2.4rem) translateY(-7.2rem);
     }
-}
+} */
 
 
 .other .wraps .other-wrap .other-img .other1
@@ -487,14 +487,14 @@ header .search-menu img
     text-decoration: none;
     padding: 0.4rem;
 }
-
+/* 
 @media(max-width: 568px)
 {
     .front-page .filters a
     {
         font-size: 1.2rem
     }
-}
+} */
 
 .front-page .filters a:active
 {
