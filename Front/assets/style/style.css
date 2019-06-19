@@ -158,7 +158,7 @@ header .burger-menu span
 
 
 /**
-**Search Menu
+**Search Menu Anim
 **/
 
 header .search-menu
@@ -186,23 +186,21 @@ header .open-search.open
     transform: translateY(-100%)
 }
 
-header .open-search .inner .search-field
+/**
+**Search Menu Inner
+**/
+header .open-search .inner 
 {
-    width: 55vw;
-    position: relative;
-    top: 1.6rem;
-    left: 100vw;
-    height: 2.4rem;
-    border: 1px solid #B5B5B5;
-    border-radius: 1rem;
-    transition-delay: 200ms;
-    transition: 400ms ease-in-out
+    height: 100vh;
+    width: 100vw;
 }
 
-header .open-search.open .inner .search-field
+
+header .open-search .inner .wrap
 {
-    transform: translateX(-75vw);
+    width: 80vw;
 }
+
 
 /**
 **Burger + Search
@@ -276,6 +274,15 @@ header .search-menu img
     transform: translateX(2.4rem) translateY(-10.4rem);
     height: 8.8rem;
     width: 100%;
+}
+
+@media(max-width: 568px)
+{
+    .other .wraps .other-wrap .other-img .background
+    {
+        height: 4.8rem;
+        transform: translateX(2.4rem) translateY(-7.2rem);
+    }
 }
 
 
@@ -469,6 +476,14 @@ header .search-menu img
     text-align: center;
     text-decoration: none;
     padding: 0.4rem;
+}
+
+@media(max-width: 568px)
+{
+    .front-page .filters a
+    {
+        font-size: 1.2rem
+    }
 }
 
 .front-page .filters a:active
