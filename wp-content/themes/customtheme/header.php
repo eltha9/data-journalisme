@@ -10,5 +10,12 @@
 </head>
 <body <?php body_class(); ?>>
     <header id="header">
-
+        <div class="menu-bar">
+            <img src="<?= get_template_directory_uri() ?>/assets/images/Menu.svg" alt="">
+        </div>
+        <a href="#" class="menu-search">
+            <img src="<?= get_template_directory_uri() ?>/assets/images/Search.svg" alt="">
+        </a>
     </header>
+    <div class="header-margin"></div>
+    

@@ -1,1 +1,1 @@
-# A Wordpress data-journalisme site
+# A Wordpress data-journalism site
