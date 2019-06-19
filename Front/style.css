@@ -255,13 +255,18 @@ body
 **Menu Comments 
 **/
 
-.article .comments .commentsmenu
+.article .comments .commentsmenu 
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
-    padding-top: 3.2rem;
+    align-items: center;
+    height: 3.2rem;
+}
+
+.article .comments .commentsmenu button
+{
+    height: 2.4rem;
 }
 
 .article .comments .commentsmenu a
