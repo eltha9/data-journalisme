@@ -120,12 +120,70 @@ header .burger-menu, header .search-menu
 }
 
 
-header .search-menu img, header .burger-menu img
+header .search-menu img
 {
     height: 100%;
     width: 100%;
 }
 
+header .burger-menu 
+{
+    width:  2.2rem;
+    height:  2.2rem;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+header .burger-menu span 
+{
+    display: block;
+    height: 0.4rem;
+    position: relative;
+    margin: 0.5rem auto;
+    width: 100%;
+    background: #282828;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger-menu span:nth-child(2),.burger-menu span:nth-child(3)
+{
+    top: 1.8rem;
+}
+  
+.burger-menu span:nth-child(4) 
+{
+    top: 3.6rem;
+}
+  
+.burger-menu.open span:nth-child(1) 
+{
+    top: 1.8rem;
+    width: 0%;
+    left: 50%;
+}
+  
+.burger-menu.open span:nth-child(2) 
+{
+    transform: rotate(45deg);
+}
+  
+.burger-menu.open span:nth-child(3) 
+{
+    transform: rotate(-45deg);
+}
+  
+.burger-menu.open span:nth-child(4) 
+{
+    top: 1.8rem;
+    width: 0%;
+    left: 50%;
+ }
+  
 /**
 **Margin
 **/
