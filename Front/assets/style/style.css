@@ -29,10 +29,6 @@ header
     align-items: center;
 }   
 
-header .burger-menu, header .search-menu
-{
-    margin: 0 2.4rem;
-}
 
 /**
 **Burger Menu
@@ -42,13 +38,6 @@ header .burger-menu
 {
     height: 1.6rem;
     width: 2.5rem;
-}
-
-header .burger-menu img
-{
-    height: 100%;
-    width: 100%;
-    stroke: #282828
 }
 
 /**
@@ -61,11 +50,21 @@ header .search-menu
     width: 2.2rem;
 }
         
-header .search-menu img
+/**
+**Burger + Search
+**/
+
+
+header .burger-menu, header .search-menu
+{
+    margin: 0 2.4rem;
+}
+
+
+header .search-menu img, header .burger-menu img
 {
     height: 100%;
     width: 100%;
-    stroke: #282828
 }
 
 /**
