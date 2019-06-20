@@ -1,12 +1,15 @@
-const video = document.querySelector('.video')
-const videoBtn = document.querySelector('button')
 
+const video = document.querySelector('.video') ? document.querySelector('.video') : null 
+const videoBtn = document.querySelector('button') ? document.querySelector('button') : null
 
-videoBtn.addEventListener('click', ()=>
+if(videoBtn != null)
 {
-    video.play()
-    video.requestFullscreen()
-})
+    videoBtn.addEventListener('click', ()=>
+    {
+        video.play()
+        video.requestFullscreen()
+    })
+} 
 
 
 const menu = document.querySelector('.open-menu')
