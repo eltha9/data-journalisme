@@ -32,8 +32,17 @@
         <span></span>
         <span></span>            
     </div>
-    <a href="#" class="search-menu">
-        <img src="<?=get_template_directory_uri().'/assets/images/Search.svg'?>" >
-    </a>
+
+    <div class="open-search">
+        <div class="inner">
+            <div class="wrap">
+                <input type="text" placeholder="Rechercher...">
+            </div>
+        </div>
+    </div>
+    <div class="search-menu">
+        <img src="<?= get_template_directory_uri().'/assets/images/Search.svg'?>" alt="search-menu">
+    </div>
+
 </header>
 <div class="header-margin"></div>

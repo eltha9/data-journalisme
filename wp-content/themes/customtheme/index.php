@@ -78,7 +78,7 @@
                         <img src="<?=get_template_directory_uri().'/assets/images/more1.png'?>" alt="popular">
                     </div>
                     <div class="card">
-                        <div class="card-title"><h4>CACA CACA CACA CACA GROS CACA</h4></div>
+                        <div class="card-title"><h4>Un titre</h4></div>
                         <div class="card-author">
                             <small>By Marc Curtis, 31 Oct 2019</small>
                         </div>
