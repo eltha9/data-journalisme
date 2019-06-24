@@ -438,10 +438,11 @@ header .search-menu img
         width: 70%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 1.6rem;
     }
     .other .wraps .other-wrap .flex .othercontent
     {
-        margin: 2.4rem 0
+        margin-top: 2.4rem;    
     }
     .other .wraps .other-wrap .flex .othercontent p
     {
@@ -454,12 +455,12 @@ header .search-menu img
     }
     .other .other-wrap .author span
     {
-        font-size: 2.8rem
+        font-size: 2.2rem
     }   
     .other .other-wrap .date small
     {
-        font-size: 2.2rem;
-        margin-top: 1.6rem
+        font-size: 1.8rem;
+        padding-top: 1.6rem
     }
 }
 
