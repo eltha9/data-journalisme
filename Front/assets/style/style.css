@@ -725,7 +725,7 @@ header .search-menu img
 {
     .front-page .popular .sidescroll .wrap 
     {
-        width: 50%;
+        width: 40%;
     }
 }
 
@@ -743,9 +743,17 @@ header .search-menu img
 
 .banner
 {
-    height: 42vh;
+    height: 46vh;
     width: 100vw;
     overflow: hidden;
+}
+
+@media (min-width: 720px)
+{
+    .front-page .popular .sidescroll .wrap 
+    {
+        width: 40%;
+    }
 }
 
 /**
@@ -790,16 +798,20 @@ header .search-menu img
     width: 100vw;
     position: absolute;
     top: 10vh;
+    height: 46%;
 }
 
-.banner .thumbnail img
+.banner .thumbnail 
 {
-    width: 100vw;
+    width: 100%;
+    height: 46%;
     position: absolute;
     top: 10vh;
-    z-index: 100
+    z-index: 100;
+    background-image: url('../images/image.png');
+    background-size: cover;
+    background-position: center
 }
-
 
 .banner button
 {
@@ -809,10 +821,31 @@ header .search-menu img
 
 .banner button svg
 {
-    height: 20%;
-    width: 20%;
+    width: 15%;
     position: relative;
     z-index: 300;
+}
+
+@media(min-width: 320px)
+{ 
+    .banner, 
+    .banner .thumbnail 
+    {
+        height: 56vh;
+    }
+    .banner .nav
+    {
+        top: 4.8rem;
+        margin: 4.4rem 0;
+    }
+}
+@media(min-width: 778px)
+{ 
+    .banner, 
+    .banner .thumbnail 
+    {
+        height: 68vh;
+    }
 }
 
 /**-------Article-------**/
@@ -921,6 +954,33 @@ header .search-menu img
     padding: 2.2rem 0
 }
 
+@media(min-width: 320px)
+{    
+    .article
+    {
+        padding: 0 8rem;
+        margin-top: 10rem
+    }
+    .article .article-content img
+    {
+        width: 60vw;
+        padding: 3.2rem 0
+    }
+}
+@media(min-width: 560px)
+{    
+    .article
+    {
+        padding: 0 16rem;
+    }
+}
+@media(min-width: 1024px)
+{    
+    .article
+    {
+        padding: 0 32rem;
+    }
+}
 /**-------More-------**/
 
 
