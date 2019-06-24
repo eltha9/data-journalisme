@@ -18,6 +18,7 @@ const menuBtn = document.querySelector('.burger-menu')
 const search = document.querySelector('.open-search')
 const searchBtn = document.querySelector('.search-menu')
 
+
 let burgerMenuOpen=false 
 let searchMenuOpen=false 
 

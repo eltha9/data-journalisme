@@ -76,7 +76,8 @@ header .open-menu .inner
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: center
+    align-items: center;
+    overflow: hidden;
 }
 
 header .open-menu .inner ul li
@@ -93,13 +94,34 @@ header .open-menu .inner ul li a
 }
 
 
-header .open-menu .inner svg
+header .open-menu .inner .svg
 {
     width: 75%;
     position: fixed;
     right: -50%
 }
 
+@media (min-width: 560px)
+{
+    header .open-menu .inner .svg 
+    {
+        width: 100%;
+        transform: rotateZ(90deg);
+        right: 0;
+        top: 14rem;
+        transition: 600ms ease-in-out;
+        position: fixed;
+    }
+    header .open-menu .inner ul
+    {
+        display: flex;
+        flex-direction: row;
+    }   
+    header .open-menu .inner
+    {
+        justify-content: center;
+    }
+}
 
 header .burger-menu 
 {
