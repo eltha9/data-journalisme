@@ -310,7 +310,6 @@ header .search-menu img
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1.6rem 0 
 }
 
 /**
@@ -958,7 +957,6 @@ header .search-menu img
 {    
     .article
     {
-        padding: 0 8rem;
         margin-top: 10rem
     }
     .article .article-content img
