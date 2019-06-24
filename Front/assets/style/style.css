@@ -307,7 +307,6 @@ header .search-menu img
 
 .other .wraps .other-wrap
 {
-    height: 16vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -320,7 +319,7 @@ header .search-menu img
 
 .other .wraps .other-wrap .other-img
 {
-    width: 40%;
+    width: 90%;
     margin: 1.6rem 1.6rem 0 0;
 }
 
@@ -328,7 +327,6 @@ header .search-menu img
 {
     outline: 0.5rem solid #FFFFFF;
     width: 100%;
-    position: relative;
     z-index: 5;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
 }
@@ -336,28 +334,61 @@ header .search-menu img
 
 .other .wraps .other-wrap .other-img .background
 {
-    position: relative;
     z-index: -5;
-    transform: translateX(2.4rem) translateY(-10.4rem);
-    height: 8.8rem;
+    height: 75%;
     width: 100%;
+    position: relative;
+    top: -8.4rem;
+    left: 22%;
 }
 
-/* @media(max-width: 568px)
+.other .wraps .other-wrap .flex .othercontent p
 {
+    opacity: 0
+}
+
+@media (min-width: 770px)
+{    
+    .other .wraps .other-wrap
+    {
+        margin: 3.2rem 0
+    }   
+    .other .wraps .other-wrap .other-img 
+    {
+        position: relative;
+        left: 10%;
+        width: 40%;
+    }  
+    .other .wraps .other-wrap .other-img img
+    {
+        width: 55%;
+    }    
     .other .wraps .other-wrap .other-img .background
     {
-        height: 4.8rem;
-        transform: translateX(2.4rem) translateY(-7.2rem);
+        width: 55%;
+        height: 100%;
+        top: -125%;
+        left: 25%;
     }
-} */
-
-
+    .other .wraps .other-wrap .flex
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .other .wraps .other-wrap .flex .othercontent p
+    {
+        opacity: 1
+    }
+    .other .wraps .other-wrap .flex .other-title h3
+    {
+        font-size: 2.4rem
+    }
+}
 .other .wraps .other-wrap .other-img .other1
 {
     background-color: #FFD972;
 }
-
 
 
 .other .wraps .other-wrap .other-img .other2
@@ -500,10 +531,23 @@ header .search-menu img
     .front-page .daily-article .card
     {   
         padding: 1.4rem;
-        width: 38%;
+        width: 70%;
     }
 }
-
+@media (min-width: 778px)
+{    
+    .front-page .daily-article .card
+    {  
+        width: 50%;
+    }
+}
+@media (min-width: 1024px)
+{    
+    .front-page .daily-article .card
+    {  
+        width: 40%;
+    }
+}
 .front-page .card .card-title h4
 {
     font-size: 1.6rem
