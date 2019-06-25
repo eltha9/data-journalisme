@@ -611,6 +611,7 @@ header .search-menu img
 .banner .thumbnail img
 {
     width: 100vw;
+    height: 22rem;
     position: absolute;
     top: 10vh;
     z-index: 100
@@ -735,7 +736,7 @@ header .search-menu img
     color: #282828;
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 22px; 
     line-height: 26px;
 
     margin: 3.2rem 0;
@@ -773,6 +774,16 @@ header .search-menu img
 .article .comments
 {
     margin: 3.2rem 0;
+}
+.article .comments h2
+{
+    color: #282828;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px; 
+    line-height: 26px;
+
+    margin-top: 3.2rem ;
 }
 
 /**

@@ -19,10 +19,10 @@ get_header();
                 </svg>                    
     </button>
     <div class="thumbnail">
-        <img src="../assets/images/image.png" alt="thumbnail"> <!-- image de la video -->
+        <img src="<?= get_template_directory_uri().'/assets/images/placeholder.png'?>" alt="thumbnail"> <!-- image de la video -->
     </div>
     <video class="video">
-        <source src="../assets/videos/video.mp4" type="video/mp4"> <!-- video -->
+        <source src="<?= get_template_directory_uri().'/assets/video/interview.mp4'?>" preload="none" type="video/mp4"> <!-- video -->
     </video>
 
     <div class="nav">     
@@ -59,23 +59,24 @@ get_header();
        <?= the_content()?>
     </div>
 
-    <div class="more">
+    <!-- <div class="more">
         <h3>Cellulite Treatment Options</h3>
         <div class="sidescroll">
-            <img src="../assets/images/more1.png" alt="more">
-            <img src="../assets/images/more2.png" alt="more">
-            <img src="../assets/images/more3.png" alt="more">
+            <img src="<?= get_template_directory_uri().'/assets/images/more1.png'?>" alt="more">
+            <img src="<?= get_template_directory_uri().'/assets/images/more2.png'?>" alt="more">
+            <img src="<?= get_template_directory_uri().'/assets/images/more3.png'?>" alt="more">
         </div>
-    </div>
+    </div> -->
 
     <div class="comments">
 
     <div class="title"><h2>Comments</h2></div>
     <div class="underline"></div>
     <?php
-    if ( comments_open() || get_comments_number() ) :
-     comments_template();
-    endif;
+    // if ( comments_open() || get_comments_number() ) :
+    //  comments_template();
+    // endif;
+    show_comments();
     ?>
 
     <div class="comments-menu">
@@ -97,7 +98,7 @@ get_header();
                 <div class="date"><small>25 Dec 2019</small></div>
             </div>
             <div class="other-img">
-                <img src="../assets/images/other1.png" alt="other-img">
+                <img src="<?=get_template_directory_uri().'/assets/images/other1.png'?>" alt="other-img">
                 <div class="background other1"></div>
             </div>
         </div>
@@ -109,7 +110,7 @@ get_header();
                 <div class="date"><small>25 Dec 2019</small></div>
             </div>
             <div class="other-img">
-                <img src="../assets/images/other2.png" alt="other-img">
+                <img src="<?=get_template_directory_uri().'/assets/images/other2.png'?>" alt="other-img">
                 <div class="background other2"></div>
             </div>
         </div>
@@ -121,7 +122,7 @@ get_header();
                 <div class="date"><small>25 Dec 2019</small></div>
             </div>
             <div class="other-img">
-                <img src="../assets/images/other3.png" alt="other-img">
+                <img src="<?= get_template_directory_uri().'/assets/images/other3.png'?>" alt="other-img">
                 <div class="background other3"></div>
             </div>
         </div>
