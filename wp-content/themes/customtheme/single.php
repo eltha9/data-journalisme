@@ -4,6 +4,10 @@
  * 
  * 
 */
+if(!empty($_POST)){
+    add_comment();
+}
+
 
 get_header();
 ?>
@@ -80,52 +84,34 @@ get_header();
     ?>
 
     <div class="comments-menu">
-        <button><a href=" #">Show all...</a></button>
-        <button><a href=" #">Add a comment +</a></button>
+        <h3>Ajouter un commentaire: </h3>
+        <form action="#" method="post">
+            <label >
+                Nom/Pseudo:
+                <input name="author" placeholder="Votre nom/pseudo" type="text" required>
+            </label>
+            <label >
+                Mail:
+                <input name="mail" placeholder="votre mail" type="email" required>
+            </label>
+            <label >
+                Votre commentaire:
+                <textarea name="content" id="" cols="60" rows="2" required></textarea>
+            </label>
+            <input type="submit" value="Ajouter votre commentaire">
+        </form>
     </div>
     </div>
 
     <div class="other">
 
-    <div class="title"><h2>Other Articles</h2></div>
+    <div class="title other">
+        <h2>Other Articles</h2>
+    </div>
     <div class="underline"></div>
 
     <div class="wraps">
-        <div class="other-wrap">
-            <div class="flex">
-                <div class="other-title"><h3>What Are The Lasik Procedures</h3></div>
-                <div class="author"><span>By Eliza McCoy</span></div>
-                <div class="date"><small>25 Dec 2019</small></div>
-            </div>
-            <div class="other-img">
-                <img src="<?=get_template_directory_uri().'/assets/images/other1.png'?>" alt="other-img">
-                <div class="background other1"></div>
-            </div>
-        </div>
-
-        <div class="other-wrap">
-            <div class="flex">
-                <div class="other-title"><h3>What Are The Lasik Procedures</h3></div>
-                <div class="author"><span>By Eliza McCoy</span></div>
-                <div class="date"><small>25 Dec 2019</small></div>
-            </div>
-            <div class="other-img">
-                <img src="<?=get_template_directory_uri().'/assets/images/other2.png'?>" alt="other-img">
-                <div class="background other2"></div>
-            </div>
-        </div>
-
-        <div class="other-wrap">
-            <div class="flex">
-                <div class="other-title"><h3>What Are The Lasik Procedures</h3></div>
-                <div class="author"><span>By Eliza McCoy</span></div>
-                <div class="date"><small>25 Dec 2019</small></div>
-            </div>
-            <div class="other-img">
-                <img src="<?= get_template_directory_uri().'/assets/images/other3.png'?>" alt="other-img">
-                <div class="background other3"></div>
-            </div>
-        </div>
+        <?php fake_articles()?>
     </div>
 
     </div>

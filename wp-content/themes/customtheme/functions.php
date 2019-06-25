@@ -42,12 +42,23 @@ function script(){
 }
 
 
-function add_comment($array){
+function add_comment(){
+    $comments= json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/comments.json'));
 
+    $new_comment = new stdClass();
+    $new_comment->author = htmlspecialchars( $_POST['author']);
+    $new_comment->mail = htmlspecialchars( $_POST['mail']);
+    $new_comment->date = time();
+    $new_comment->avatar = get_template_directory_uri().'/assets/images/author.png';
+    $new_comment->content =htmlspecialchars( $_POST['content']);
+
+    array_push($comments, $new_comment);
+
+    file_put_contents('wp-content/themes/customtheme/assets/data/comments.json',json_encode($comments));
 }
 
 function show_comments(){
-    $comments = json_decode(file_get_contents(get_template_directory_uri().'/assets/data/comments.json'));
+    $comments = json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/comments.json'));
 
     foreach( $comments as $comment):
 
@@ -56,7 +67,7 @@ function show_comments(){
         <img src="<?= $comment->avatar ?>" alt="author">
         <div class="author-info">
             <div class="author-wrap">
-                <div class="author-name"><span><?= $comment->auhtor?></span></div>
+                <div class="author-name"><span><?= $comment->author?></span></div>
                 <button>
                     <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C6 4.657 4.657 6 3 6C1.343 6 0 4.657 0 3C0 1.343 1.343 0 3 0C4.657 0 6 1.343 6 3ZM15 3C15 4.657 13.657 6 12 6C10.343 6 9 4.657 9 3C9 1.343 10.343 0 12 0C13.657 0 15 1.343 15 3ZM21 6C22.657 6 24 4.657 24 3C24 1.343 22.657 0 21 0C19.343 0 18 1.343 18 3C18 4.657 19.343 6 21 6Z" fill="#757675"/>
@@ -68,6 +79,48 @@ function show_comments(){
     </div> 
     <div class="content">
         <p><?=$comment->content?></p>
+    </div>
+    <?php
+    endforeach;
+}
+
+function fake_articles(){
+    $articles = json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/fake_article.json'));
+
+
+    foreach($articles as $article):
+    ?>
+    <div class="other-wrap">
+        <div class="flex">
+            <div class="other-title"><h3><?=$article->title ?></h3></div>
+            <div class="author"><span>By <?= $article->author?></span></div>
+            <div class="date"><small><?= $article->date?></small></div>
+        </div>
+        <div class="other-img">
+            <img src="<?=$article->image?>" alt="other-img">
+            <div class="background other2"></div>
+        </div>
+    </div>
+    <?php
+    endforeach;
+}
+
+function fake_articles_home(){
+    $articles = json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/fake_article.json'));
+
+
+    foreach($articles as $article):
+    ?>
+    <div class="wrap">
+        <div class="card-img">
+            <img src="<?=$article->image?>" alt="popular">
+        </div>
+        <div class="card">
+            <div class="card-title"><h4><?= $article->title?></h4></div>
+            <div class="card-author">
+                <small>By <?=$article->author.', '.$article->date?></small>
+            </div>
+        </div>
     </div>
     <?php
     endforeach;

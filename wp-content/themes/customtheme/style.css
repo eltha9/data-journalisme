@@ -521,6 +521,7 @@ header .search-menu img
     display: inline-block;
     width: 80%;
     padding-right: 2.4rem;
+    overflow-x: hidden;
 }
 
 .front-page .popular .sidescroll .card-img img
@@ -816,15 +817,39 @@ header .search-menu img
 .article .comments .comments-menu 
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.2rem;
+    flex-direction: column;
+
+}
+.article .comments .comments-menu h3
+{
+    font-size: 22px;
+    margin: 2rem 0;
+}
+.article .comments .comments-menu label{
+    display: block;
+    font-size: 16px;
+    margin: 1rem 0;
+}
+.article .comments .comments-menu input{
+    display: block;
+    font-size: 16px;
+    margin: 1rem 0;
+}
+.article .comments .comments-menu textarea{
+    display: block;
+    font-size: 16px;
+    margin: 1rem 0;
+    width: 100%;
+    height: auto;
 }
 
-.article .comments .comments-menu button
+.article .comments .comments-menu input[type=submit]
 {
-    height: 2.4rem;
+    padding: 10px;
+    height: auto;
+    cursor: pointer;
+    background-color: #e3e3e3;
+    border-radius: 5px;
 }
 
 .article .comments .comments-menu a
@@ -836,7 +861,10 @@ header .search-menu img
 }
 
 /**-------Other-------**/
-
+.title.other h2{
+    font-size: 22px;
+    margin-top: 2rem ;
+}
 
 /* voir GENERAL 
 
