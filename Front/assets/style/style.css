@@ -48,16 +48,8 @@ header
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.8rem;
 }   
 
-@media (min-width:520px)
-{
-    header
-    {
-        padding: 0 1.6rem;
-    }
-}
 
 /**
 **Burger Menu
