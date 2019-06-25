@@ -1,0 +1,10 @@
+.highcharts-root {
+    width: 60%;
+}
+.highcharts-container{
+    display: flex;
+    justify-content: center;
+}
+.highcharts-root {
+    font-family: 'Poppins', sans-serif !important;
+}

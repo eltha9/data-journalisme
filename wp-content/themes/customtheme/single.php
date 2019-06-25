@@ -7,6 +7,9 @@
 
 get_header();
 ?>
+
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="banner">
 
     <button>
@@ -16,9 +19,11 @@ get_header();
                 </svg>                    
     </button>
     <div class="thumbnail">
-        <img src="../assets/images/image.png" alt="thumbnail">
+        <img src="../assets/images/image.png" alt="thumbnail"> <!-- image de la video -->
     </div>
-    <video class="video"><source src="../assets/videos/video.mp4" type="video/mp4"></video>
+    <video class="video">
+        <source src="../assets/videos/video.mp4" type="video/mp4"> <!-- video -->
+    </video>
 
     <div class="nav">     
         <svg class="justify-left" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,22 +43,20 @@ get_header();
 <section class="article">
 
     <div class="author">
-        <img src="../assets/images/author.jpg" alt="author">
+        <img src="<?= get_template_directory_uri().'/assets/images/author.png'?>" alt="author">
         <div class="author-info">
-            <div class="author-name"><span>By Marc Curtis</span></div>
-            <div class="date"><small>31 Oct 2019</small></div>
+            <div class="author-name"><span><?= get_the_author()?></span></div>
+            <div class="date"><small><?= get_the_date('j F Y') ?></small></div>
         </div>
     </div>
 
     <div class="article-title title">
-        <h2>The Different Types Of Laser Eye Surgery</h2>
+        <h1><?= the_title()?></h1>
         <div class="underline"></div>
     </div>
 
     <div class="article-content content">
-        <p>The LASIK surgeon uses computer software to guide the IntraLase laser beam, which applies a series of tiny (3-micron-diameter) bubbles within the central layer of the cornea. The resulting corneal flap is created at a precise depth and diameter pre-determined by the surgeon. As occurs with a mechanical microkeratome, a small section of tissue at one edge of the flap is left uncut, forming a hinge.</p>
-        <img src="../assets/images/postpic.png" alt="post pic">
-        <p>The LASIK surgeon uses computer software to guide the IntraLase laser beam, which applies a series of tiny (3-micron-diameter) bubbles within the central layer of the cornea. The resulting corneal flap is created at a precise depth and diameter pre-determined by the surgeon. As occurs with a mechanical microkeratome, a small section of tissue at one edge of the flap is left uncut, forming a hinge.</p>
+       <?= the_content()?>
     </div>
 
     <div class="more">
@@ -67,58 +70,13 @@ get_header();
 
     <div class="comments">
 
-    <div class="title"><h2>Comments (40) </h2></div>
+    <div class="title"><h2>Comments</h2></div>
     <div class="underline"></div>
-
-    <div class="author">
-        <img src="../assets/images/author.jpg" alt="author">
-        <div class="author-info">
-            <div class="author-wrap">
-                <div class="author-name"><span>Marc Curtis</span></div>
-                <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C6 4.657 4.657 6 3 6C1.343 6 0 4.657 0 3C0 1.343 1.343 0 3 0C4.657 0 6 1.343 6 3ZM15 3C15 4.657 13.657 6 12 6C10.343 6 9 4.657 9 3C9 1.343 10.343 0 12 0C13.657 0 15 1.343 15 3ZM21 6C22.657 6 24 4.657 24 3C24 1.343 22.657 0 21 0C19.343 0 18 1.343 18 3C18 4.657 19.343 6 21 6Z" fill="#757675"/>
-                </svg>
-            </div>
-            <div class="date"><small>31 Oct 2019</small></div>               
-        </div>
-    </div> 
-    <div class="content">
-        <p>I have found some valuable resources for us to use and publisize, all of which are dedicated to responsible travel and care of our environment.</p>
-    </div>
-
-    <div class="author">
-        <img src="../assets/images/author.jpg" alt="author">
-        <div class="author-info">
-            <div class="author-wrap">
-                <div class="author-name"><span>Marc Curtis</span></div>
-                <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C6 4.657 4.657 6 3 6C1.343 6 0 4.657 0 3C0 1.343 1.343 0 3 0C4.657 0 6 1.343 6 3ZM15 3C15 4.657 13.657 6 12 6C10.343 6 9 4.657 9 3C9 1.343 10.343 0 12 0C13.657 0 15 1.343 15 3ZM21 6C22.657 6 24 4.657 24 3C24 1.343 22.657 0 21 0C19.343 0 18 1.343 18 3C18 4.657 19.343 6 21 6Z" fill="#757675"/>
-                </svg>
-            </div>
-            <div class="date"><small>31 Oct 2019</small></div>               
-        </div>
-    </div> 
-    <div class="content">
-        <p>I have found some valuable resources for us to use and publisize, all of which are dedicated to responsible travel and care of our environment.</p>
-    </div>
-
-    <div class="author">
-        <img src="../assets/images/author.jpg" alt="author">
-        <div class="author-info">
-            <div class="author-wrap">
-                <div class="author-name"><span>Marc Curtis</span></div>
-                <button>
-                    <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C6 4.657 4.657 6 3 6C1.343 6 0 4.657 0 3C0 1.343 1.343 0 3 0C4.657 0 6 1.343 6 3ZM15 3C15 4.657 13.657 6 12 6C10.343 6 9 4.657 9 3C9 1.343 10.343 0 12 0C13.657 0 15 1.343 15 3ZM21 6C22.657 6 24 4.657 24 3C24 1.343 22.657 0 21 0C19.343 0 18 1.343 18 3C18 4.657 19.343 6 21 6Z" fill="#757675"/>
-                    </svg>
-                </button> 
-            </div>
-            <div class="date"><small>31 Oct 2019</small></div>               
-        </div>
-    </div> 
-    <div class="content">
-        <p>If you are looking for a unique way to spend your summer vacation this year, then consider it no further. </p>
-    </div>
+    <?php
+    if ( comments_open() || get_comments_number() ) :
+     comments_template();
+    endif;
+    ?>
 
     <div class="comments-menu">
         <button><a href=" #">Show all...</a></button>
@@ -172,6 +130,8 @@ get_header();
     </div>
 
 </section>
-
+<?php endwhile; else: ?>
+<p>Sorry, no posts matched your criteria.</p>
+<?php endif; ?>
 
 <?php get_footer();?>
