@@ -142,10 +142,8 @@ header .open-menu .inner .svg
         font-size: 2.6rem;
     }
 }
-²
 
-
-@media (min-width: 990px)
+@media (min-width: 824px)
 {
     header .open-menu .inner .svg 
     {
@@ -382,12 +380,6 @@ header .search-menu img
     font-size: 2.2rem
 }
 
-
-.other .wraps .other-wrap .flex .otherspecs
-{
-    margin-top: 1.6rem
-}
-
 .other .wraps .other-wrap .flex .otherspecs .author span
 {
     font-size: 1.6rem;
@@ -428,22 +420,40 @@ header .search-menu img
     .other .wraps .other-wrap .other-img 
     {
         top: 3.2rem;
-        left: 8%
     }  
-
+    .other .wraps .other-wrap .other-img img
+    {
+        width: 24rem
+    }
+    .other .wraps .other-wrap .other-img .background
+    {
+        z-index: -5;
+        width: 24rem;
+        height: 18rem;
+        position: relative;
+        top: -22.8rem;
+        left: 18%;
+    }
     .other .wraps .other-wrap .flex .othercontent p
     {
         display: block;
         font-size: 1.2rem;
-        line-height: 2.2rem;
+        line-height: 2.2rem; 
+        padding: 1.6rem 3.2rem 1.6rem 0;
     }    
     .other .wraps .other-wrap .flex .other-title h3
     {
         font-size: 3.6rem
     }
+    
+    .other .wraps .other-wrap .flex .otherspecs .author
+    {
+        padding-bottom: 0.8rem
+    }
+
     .other .wraps .other-wrap .flex .otherspecs .author span
     {
-        font-size: 2.8rem
+        font-size: 2.8rem;
     }
     .other .wraps .other-wrap .flex .otherspecs .date small
     {
@@ -451,7 +461,7 @@ header .search-menu img
     }  
 }
 
-@media (min-width: 1024)
+@media (min-width: 1024px)
 {    
 
     .other .wraps .other-wrap .other-img 
@@ -464,16 +474,9 @@ header .search-menu img
     {
         width: 28rem;
     }  
-    .other .wraps .other-wrap .other-img .background
-    {
-        width: 28rem;
-        height: 22rem;
-        top: -24.8rem;
-        left: 8%;
-    }
     .other .wraps .other-wrap .flex
     {
-        width: 70%;
+        width: 48rem;
         display: flex;
         flex-direction: column;
         margin-bottom: 1.6rem;
@@ -486,6 +489,15 @@ header .search-menu img
     {
         font-size: 1.8rem;
         line-height: 2.8rem;
+        padding: 0 0 1.6rem 0;
+    }
+    .other .wraps .other-wrap .other-img .background
+    {
+        width: 28rem;
+        height: 22rem;
+        position: relative;
+        top: -24rem;
+        left: 3.2rem;
     }
 }
 
