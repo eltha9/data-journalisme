@@ -310,6 +310,7 @@ header .search-menu img
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: -8rem;
 }
 
 /**
@@ -375,10 +376,28 @@ header .search-menu img
     margin: 0.4rem 0;
     margin: 1.6rem 1.6rem 0 0;
 }
-
-.other .other-wrap .author span
+.other .wraps .other-wrap .flex .other-title h3
 {
+    font-size: 2.2rem
+}
+
+
+.other .wraps .other-wrap .flex .otherspecs
+{
+    margin-top: 1.6rem
+}
+
+.other .wraps .other-wrap .flex .otherspecs .author span
+{
+    font-size: 1.6rem;
+    font-weight: 300;  
     color: #757575
+}
+
+.other .wraps .other-wrap .flex .otherspecs .date small
+{
+    font-size: 1.2rem;
+    font-weight: 200
 }
 @media (max-width: 320px)
 {    
@@ -489,7 +508,7 @@ header .search-menu img
 -----------------------------------**/
 
 
-/**-------General-------**/
+/**-------front page general-------**/
 
 .front-page
 {
@@ -1051,4 +1070,24 @@ header .search-menu img
 
 
 /* voir GENERAL 
+
+
+/**--------------------------------
+--------------SAVED PAGE---------
+-----------------------------------**/
+
+
+
+/**-------saved general-------**/
+
+.saved
+{
+    margin: 2.4rem 
+}
+
+.saved h1
+{
+    font-size: 3.2rem;
+    margin: 1.6rem 0
+}
 
