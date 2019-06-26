@@ -2,24 +2,7 @@
 
 <section class="front-page">
 
-        <div class="daily-article">
-            <div class="daily-title"><h1>Article of the day</h1></div>
-            <img src="<?=get_template_directory_uri().'/assets/images/image.png'?>" alt="">
-            <div class="card">
-                <div class="card-title">
-                    <h4>The Different Types Of Laser Eye Surgery</h4>
-                </div>
-                <div class="card-specs">
-                    <div class="card-author">
-                        <small>By Marc Curtis, 31 Oct 2019</small>
-                    </div>
-                    <div class="card-btn">
-                        <img src="<?=get_template_directory_uri().'/assets/images/bookmark.svg'?>" alt="bookmark">
-                        <img src="<?=get_template_directory_uri().'/assets/images/share.svg'?>" alt="share">
-                    </div>
-                </div>
-            </div>
-        </div>
+       <?php show_recent_article()?>
 
         <div class="filters">
             <a href="">All</a>

@@ -16,12 +16,12 @@
     <div class="open-menu">
         <div class="inner">
             <ul>
-                <li> <a href="<?= home_url()?>">Home</a> </li>
+                <li> <a href="<?= home_url()?>"">Home</a> </li>
                 <li> <a href="">Saved</a> </li>
                 <li> <a href="">About</a> </li>
                 <!-- <li> <a href="">Profile</a> </li> -->
             </ul>
-            <svg viewBox="0 0 273 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="svg" viewBox="0 0 273 437" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M136.5 437C211.887 437 273 339.174 273 218.5C273 97.8258 211.887 0 136.5 0C61.1131 0 0 97.8258 0 218.5C0 339.174 61.1131 437 136.5 437Z" fill="#95D9C3"/>
             </svg>                    
         </div>
@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="search-menu">
-        <img src="<?= get_template_directory_uri().'/assets/images/Search.svg'?>" alt="search-menu">
+        <img src="<?=get_template_directory_uri(). '/assets/images/Search.svg'?>" alt="search-menu">
     </div>
 
 </header>

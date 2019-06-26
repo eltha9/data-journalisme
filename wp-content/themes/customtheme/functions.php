@@ -125,3 +125,26 @@ function fake_articles_home(){
     <?php
     endforeach;
 }
+
+function show_recent_article(){
+    ?>
+    <div class="daily-article">
+        <div class="daily-title"><h1>Article of the day</h1></div>
+        <img src="<?=get_template_directory_uri().'/assets/images/image.png'?>" alt="">
+        <div class="card">
+            <div class="card-title">
+                <h4><a href="http://localhost:8888/data_journalisme/2019/06/23/le-diabete-cest-quoi/">The Different Types Of Laser Eye Surgery </a></h4>
+            </div>
+            <div class="card-specs">
+                <div class="card-author">
+                    <small>By Marc Curtis, 31 Oct 2019</small>
+                </div>
+                <div class="card-btn">
+                    <img src="<?=get_template_directory_uri().'/assets/images/bookmark.svg'?>" alt="bookmark">
+                    <img src="<?=get_template_directory_uri().'/assets/images/share.svg'?>" alt="share">
+                </div>
+            </div>
+        </div>
+</div>  
+    <?php
+}
