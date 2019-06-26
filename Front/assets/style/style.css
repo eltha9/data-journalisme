@@ -317,6 +317,7 @@ header .search-menu img
 {
     outline: 0.5rem solid #FFFFFF;
     width: 16rem;
+    height: 12rem;
     z-index: 5;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
 }
@@ -326,7 +327,7 @@ header .search-menu img
 {
     z-index: -5;
     width: 16rem;
-    height: 14rem;
+    height: 12rem;
     position: relative;
     top: -14.8rem;
     left: 18%;
@@ -388,7 +389,8 @@ header .search-menu img
 {    
     .other .wraps .other-wrap .other-img img
     {
-        width: 10rem
+        width: 10rem;
+        height: 8rem;
     }
     .other .wraps .other-wrap .other-img .background
     {
@@ -414,7 +416,8 @@ header .search-menu img
     }  
     .other .wraps .other-wrap .other-img img
     {
-        width: 24rem
+        width: 24rem;
+        height: 18rem;
     }
     .other .wraps .other-wrap .other-img .background
     {
@@ -464,6 +467,7 @@ header .search-menu img
     .other .wraps .other-wrap .other-img img
     {
         width: 28rem;
+        height: 22rem;
     }  
     .other .wraps .other-wrap .flex
     {
