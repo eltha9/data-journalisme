@@ -3,6 +3,15 @@
 <section class="front-page">
 
        <?php show_recent_article()?>
+       
+       <div class="popular">
+            <div class="popular-title"><h1>Popular Articles</h1></div>
+            <div class="sidescroll">
+
+                <?php fake_articles_home()?>
+                
+            </div>
+        </div>
 
         <div class="filters">
             <a href="">All</a>
@@ -17,16 +26,6 @@
             </div>
 
         </div>
-
-        <div class="popular">
-            <div class="popular-title"><h1>Popular Articles</h1></div>
-            <div class="sidescroll">
-
-                <?php fake_articles_home()?>
-                
-            </div>
-        </div>
-        
 
     </section>
 

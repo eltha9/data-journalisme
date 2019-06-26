@@ -1,20 +1,30 @@
 [
     {
-        "author":"Constance",
-        "date": "next",
-        "title": "Comment un rhume peut devenir embêtant",
-        "image":"https://picsum.photos/id/269/200/200"
+        "author":"Thea",
+        "date": 1561578789,
+        "title": "CL’asthme, une maladie à prendre au sérieux",
+        "image":"https://picsum.photos/id/269/200/200",
+        "url": "http://localhost:8888/data_journalisme/2019/06/26/lasthme-une-maladie-a-prendre-au-serieux/"
     },
     {
         "author":"Thomas",
         "date": "next",
         "title": "L'angine ou les premiers signes de constipation ",
-        "image":"https://picsum.photos/id/269/200/200"
+        "image":"https://picsum.photos/id/269/200/200",
+        "url": "none"
     },
     {
         "author":"Gaëtan",
         "date": "next",
         "title": "Maladie chronique: les flatulences et l'incontinence",
-        "image":"https://picsum.photos/id/269/200/200"
+        "image":"https://picsum.photos/id/269/200/200",
+        "url": "none"
+    },
+    {
+        "author":"Constance",
+        "date": "next",
+        "title": "Comment un rhume peut devenir embêtant",
+        "image":"https://picsum.photos/id/269/200/200",
+        "url": "none"
     }
 ]

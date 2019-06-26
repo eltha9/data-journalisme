@@ -53,28 +53,24 @@ get_header();
         <h1><?= the_title()?></h1>
         <div class="underline"></div>
     </div>
+    <div class="popular">
+        <div class="popular-title"><h2>Vidéo </h2></div>
+        <div class="sidescroll">
 
+            <?php fake_articles_home()?>
+            
+        </div>
+    </div>
     <div class="article-content content">
        <?= the_content()?>
-    </div>
-
-    <!-- <div class="more">
-        <h3>Cellulite Treatment Options</h3>
-        <div class="sidescroll">
-            <img src="<?= get_template_directory_uri().'/assets/images/more1.png'?>" alt="more">
-            <img src="<?= get_template_directory_uri().'/assets/images/more2.png'?>" alt="more">
-            <img src="<?= get_template_directory_uri().'/assets/images/more3.png'?>" alt="more">
         </div>
-    </div> -->
 
     <div class="comments">
 
     <div class="title"><h2>Comments</h2></div>
     <div class="underline"></div>
     <?php
-    // if ( comments_open() || get_comments_number() ) :
-    //  comments_template();
-    // endif;
+
     show_comments();
     ?>
 

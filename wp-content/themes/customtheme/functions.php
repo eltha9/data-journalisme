@@ -39,6 +39,9 @@ function script(){
     
     wp_register_script( 'chart_script', get_template_directory_uri() . '/assets/script/chart.js' );
     wp_enqueue_script( 'chart_script' );
+
+    wp_register_script( 'chart_asthme_script', get_template_directory_uri() . '/assets/script/chart_asthme.js' );
+    wp_enqueue_script( 'chart_asthme_script' );
 }
 
 
@@ -129,7 +132,7 @@ function fake_articles_home(){
 function show_recent_article(){
     ?>
     <div class="daily-article">
-        <div class="daily-title"><h1>Article of the day</h1></div>
+        <div class="daily-title"><h1>Dossier de la semaine</h1></div>
         <img src="<?=get_template_directory_uri().'/assets/images/image.png'?>" alt="">
         <div class="card">
             <div class="card-title">
@@ -145,6 +148,6 @@ function show_recent_article(){
                 </div>
             </div>
         </div>
-</div>  
+    </div>  
     <?php
 }
