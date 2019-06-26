@@ -88,19 +88,26 @@ function show_comments(){
 }
 
 function fake_articles(){
-    $articles = json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/fake_article.json'));
+    $articles= json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/fake_article.json'));
 
 
     foreach($articles as $article):
     ?>
     <div class="other-wrap">
         <div class="flex">
-            <div class="other-title"><h3><?=$article->title ?></h3></div>
+            <div class="other-title">
+                <h3><a href="<?=home_url().$article->url ?>"><?=$article->title ?></a></h3>
+            </div>
+
+            <div class="othercontent">
+                <p><?=mb_strimwidth($article->paragraphe , 0, 250, "...")?></p>
+            </div>
+
             <div class="author"><span>By <?= $article->author?></span></div>
-            <div class="date"><small><?= $article->date?></small></div>
+            <div class="date"><small><?= date('d M Y',$article->date)?></small></div>
         </div>
         <div class="other-img">
-            <img src="<?=$article->image?>" alt="other-img">
+            <img src="<?=get_template_directory_uri().$article->image?>" alt="other-img">
             <div class="background other2"></div>
         </div>
     </div>
@@ -116,7 +123,7 @@ function fake_articles_home(){
     ?>
     <div class="wrap">
         <div class="card-img">
-            <img src="<?=$article->image?>" alt="popular">
+            <img src="<?=get_template_directory_uri().$article->image?>" alt="popular">
         </div>
         <div class="card">
             <div class="card-title"><h4><?= $article->title?></h4></div>
@@ -130,17 +137,19 @@ function fake_articles_home(){
 }
 
 function show_recent_article(){
+    $articles = json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/current_article.json'));
+
     ?>
     <div class="daily-article">
         <div class="daily-title"><h1>Dossier de la semaine</h1></div>
-        <img src="<?=get_template_directory_uri().'/assets/images/image.png'?>" alt="">
+        <img src="<?=get_template_directory_uri().'/assets/images/placeholder.png'?>" alt="">
         <div class="card">
             <div class="card-title">
-                <h4><a href="http://localhost:8888/data_journalisme/2019/06/23/le-diabete-cest-quoi/">The Different Types Of Laser Eye Surgery </a></h4>
+                <h4><a href="<?=home_url().$articles[0]->url ?>"><?= $articles[0]->title?> </a></h4>
             </div>
             <div class="card-specs">
                 <div class="card-author">
-                    <small>By Marc Curtis, 31 Oct 2019</small>
+                    <small>By <?=$articles[0]->author.', '.date('d M Y',$articles[0]->date) ?></small>
                 </div>
                 <div class="card-btn">
                     <img src="<?=get_template_directory_uri().'/assets/images/bookmark.svg'?>" alt="bookmark">

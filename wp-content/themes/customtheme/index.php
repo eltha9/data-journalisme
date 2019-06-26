@@ -3,9 +3,9 @@
 <section class="front-page">
 
        <?php show_recent_article()?>
-       
+
        <div class="popular">
-            <div class="popular-title"><h1>Popular Articles</h1></div>
+            <div class="popular-title"><h1>Nos video</h1></div>
             <div class="sidescroll">
 
                 <?php fake_articles_home()?>

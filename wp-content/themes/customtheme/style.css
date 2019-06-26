@@ -375,6 +375,14 @@ header .search-menu img
     font-size: 2.2rem;
     word-break: break-all; /* break-word ?? */
 }
+.other .wraps .other-wrap .flex .other-title h3 a
+{
+    text-decoration: none;
+}
+.other .wraps .other-wrap .flex .other-title h3:hover a
+{
+    text-decoration: underline;
+}
 
 @media (min-width: 824px)
 {
