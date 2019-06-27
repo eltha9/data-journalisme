@@ -52,7 +52,7 @@ function add_comment(){
     $new_comment->author = htmlspecialchars( $_POST['author']);
     $new_comment->mail = htmlspecialchars( $_POST['mail']);
     $new_comment->date = time();
-    $new_comment->avatar = get_template_directory_uri().'/assets/images/author.png';
+    $new_comment->avatar = get_template_directory_uri().'/assets/images/avatar.png';
     $new_comment->content =htmlspecialchars( $_POST['content']);
 
     array_push($comments, $new_comment);
@@ -67,7 +67,7 @@ function show_comments(){
 
     ?>
     <div class="author">
-        <img src="<?= $comment->avatar ?>" alt="author">
+        <img src="<?= get_template_directory_uri().$comment->avatar ?>" alt="author">
         <div class="author-info">
             <div class="author-wrap">
                 <div class="author-name"><span><?= $comment->author?></span></div>
@@ -159,4 +159,23 @@ function show_recent_article(){
         </div>
     </div>  
     <?php
+}
+
+function article_video(){
+    $response = new stdClass();
+
+    $data = json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/current_article.json'));
+   
+    if( get_the_title() == $data[0]->title){
+        $response->video= $data[0]->video;
+        $response->placeholder=$data[0]->placeholder;
+    }else if(get_the_title() == $data[1]->title){
+        $response->video= $data[1]->video;
+        $response->placeholder=$data[1]->placeholder;
+    }else{
+        $response->video= "none";
+        $response->placeholder="none";
+    }
+
+    return $response;
 }

@@ -5,7 +5,13 @@
         "title": "Le diabète, c’est quoi ?",
         "image": "/assets/images/diabete.png",
         "paragraphe": "En France, la prévalence du diabète était estimée à 5% de la population en 2016. Ce chiffre est cependant largement sous-estimé puisqu’il ne tient pas compte des personnes non traitées ou non diagnostiquées. On estime que de 20 à 30% des adultes diabétiques ne sont pas diagnostiqués.",
-        "url": "/2019/06/23/le-diabete-cest-quoi/"
+        "url": "/2019/06/23/le-diabete-cest-quoi?q=1",
+        "video": "/assets/video/interview.mp4",
+        "playlist": [
+            "/assets/video/interview.mp4",
+            "/assets/video/prevention.mp4"
+        ],
+        "placeholder": "/assets/images/placeholder.png"
     },
     {
         "author": "Thea",
@@ -13,6 +19,9 @@
         "title": "L’asthme, une maladie à prendre au sérieux",
         "image": "/assets/images/asthme.png",
         "paragraphe": "L’asthme est une maladie fréquente qui touche plus de 4 millions de personnes en France. Une enquête nationale est effectuée tous les deux ans en milieu scolaire, qui indique une prévalence de la maladie allant de 10 à 16% chez les enfants, et baisse à 6,7% à l’âge adulte.",
-        "url": "/2019/06/26/lasthme-une-maladie-a-prendre-au-serieux/"
+        "url": "/2019/06/26/lasthme-une-maladie-a-prendre-au-serieux?q=0",
+        "video": "none",
+        "playlist": [],
+        "placeholder": "/assets/images/asthme.png"
     }
 ]

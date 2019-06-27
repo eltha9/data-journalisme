@@ -76,7 +76,6 @@ header .open-menu
     will-change: transform;
     transition: 500ms ease-in-out
 }
-
 header .open-menu.open
 {
     transform: translateY(100%)

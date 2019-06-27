@@ -22,9 +22,15 @@ get_header();
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5039 45.1227C22.8372 45.5116 22 45.0308 22 44.259V19.741C22 18.9692 22.8372 18.4884 23.5039 18.8773L44.5192 31.1362C45.1807 31.5221 45.1807 32.4779 44.5192 32.8638L23.5039 45.1227Z" fill="#D6F5FF"/>
                 </svg>                    
     </button>
-    <div class="thumbnail"></div>
+    <?php $post_data = article_video();
+    echo '<pre>';
+    var_dump(article_video());
+    echo '</pre>';
+    ?>
+
+    <div class="thumbnail" style="background-image: url('<?= get_template_directory_uri().$post_data->placeholder?>');"></div>
     <video class="video">
-        <source src="<?= get_template_directory_uri().'/assets/video/interview.mp4'?>" preload="none" type="video/mp4"> <!-- video -->
+        <source src="<?= get_template_directory_uri().$post_data->video?>" preload="none" type="video/mp4"> <!-- video -->
     </video>
 
     <div class="nav">     
