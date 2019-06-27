@@ -39,7 +39,9 @@
         <span></span>
         <span></span>            
     </div>
-
+    <div class="logo">
+        <a href="<?= home_url()?>"><img src="<?=get_template_directory_uri().'/assets/images/logo.png' ?>" alt="datasanté logo"></a>
+    </div>
     <div class="open-search">
         <div class="inner">
             <div class="wrap">

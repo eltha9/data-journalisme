@@ -108,7 +108,7 @@ function fake_articles(){
         </div>
         <div class="other-img">
             <img src="<?=get_template_directory_uri().$article->image?>" alt="other-img">
-            <div class="background other2"></div>
+            <div class="background other1"></div>
         </div>
     </div>
     <?php
@@ -178,5 +178,5 @@ function article_video(){
 
 
 function search(){
-    
+
 }

@@ -379,7 +379,7 @@ header .search-menu img
 .other .wraps .other-wrap .flex .other-title h3
 {
     font-size: 2.2rem;
-    word-break: break-all; /* break-word ?? */
+    word-break: break-word; /* break-word ?? */
 }
 .other .wraps .other-wrap .flex .other-title h3 a
 {
@@ -1256,4 +1256,27 @@ header .search-menu img
 
 .popular-title{
     font-size: 22px;
+}
+
+.logo{
+    height: 60%;
+    width: 13rem;
+    /* transform: translateX(-50%); */
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.content-404{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-404 img{
+    width: 100%;
+
 }

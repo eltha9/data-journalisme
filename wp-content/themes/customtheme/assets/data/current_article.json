@@ -9,7 +9,8 @@
         "video": "/assets/video/interview.mp4",
         "playlist": [
             "/assets/video/interview.mp4",
-            "/assets/video/prevention.mp4"
+            "/assets/video/prevention.mp4",
+            "/assets/video/minutehistoire.mp4"
         ],
         "placeholder": "/assets/images/placeholder.png",
         "search": [
