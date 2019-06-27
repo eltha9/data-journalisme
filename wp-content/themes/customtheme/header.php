@@ -43,7 +43,12 @@
     <div class="open-search">
         <div class="inner">
             <div class="wrap">
-                <input type="text" placeholder="Rechercher...">
+                <form action="<?= get_template_directory_uri().'/search.php'?>" method="get">
+                    <input type="text" placeholder="Rechercher...">
+                    <button type="submit">
+                        <img src="http://localhost:8888/data_journalisme/wp-content/themes/customtheme/assets/images/Search.svg" alt="search-menu">
+                    </button>
+                </form>
             </div>
         </div>
     </div>

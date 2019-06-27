@@ -255,6 +255,13 @@ header .open-search .inner .wrap
     width: 90vw;
     border-bottom: 1px solid #9E9E9E;
     font-size: 3.2rem;
+
+    position: relative;
+}
+header .open-search .inner .wrap button
+{
+    position: absolute;
+    right: 0;
 }
 header .open-search .inner .wrap input::placeholder
 {
@@ -610,14 +617,14 @@ header .search-menu img
 {
     width: 100%;
     margin: 1.2rem 0;
-    /* height: 56rem; */
+
 }
 @media(min-width: 560px){
     .daily-article img
     {
         width: 100%;
         margin: 1.2rem 0;
-        height: 56rem;
+        height: 60rem;
     }
 }
 
@@ -714,7 +721,6 @@ header .search-menu img
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: 0 0 3.2rem 0
 }
 
@@ -729,6 +735,7 @@ header .search-menu img
     text-align: center;
     text-decoration: none;
     padding: 0.4rem;
+    margin-right: 4rem;
 }
 @media(min-width: 560px)
 {

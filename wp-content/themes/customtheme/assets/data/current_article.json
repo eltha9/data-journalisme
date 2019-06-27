@@ -1,7 +1,7 @@
 [
     {
         "author": "Thea",
-        "date": 0 ,
+        "date": 1561301718,
         "title": "Le diabète, c’est quoi ?",
         "image": "/assets/images/diabete.png",
         "paragraphe": "En France, la prévalence du diabète était estimée à 5% de la population en 2016. Ce chiffre est cependant largement sous-estimé puisqu’il ne tient pas compte des personnes non traitées ou non diagnostiquées. On estime que de 20 à 30% des adultes diabétiques ne sont pas diagnostiqués.",
@@ -12,7 +12,11 @@
             "/assets/video/prevention.mp4"
         ],
         "placeholder": "/assets/images/placeholder.png",
-        "search": []
+        "search": [
+            "diabète",
+            "tyep 1",
+            "type 2"
+        ]
     },
     {
         "author": "Thea",
@@ -24,6 +28,8 @@
         "video": "none",
         "playlist": [],
         "placeholder": "/assets/images/asthme.png",
-        "search": []
+        "search": [
+            "asthme"
+        ]
     }
 ]
