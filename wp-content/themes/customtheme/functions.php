@@ -52,7 +52,7 @@ function add_comment(){
     $new_comment->author = htmlspecialchars( $_POST['author']);
     $new_comment->mail = htmlspecialchars( $_POST['mail']);
     $new_comment->date = time();
-    $new_comment->avatar = get_template_directory_uri().'/assets/images/avatar.png';
+    $new_comment->avatar = '/assets/images/avatar.png';
     $new_comment->content =htmlspecialchars( $_POST['content']);
 
     array_push($comments, $new_comment);
@@ -115,22 +115,16 @@ function fake_articles(){
     endforeach;
 }
 
-function fake_articles_home(){
-    $articles = json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/fake_article.json'));
+function video_listing($videos){
+    
 
 
-    foreach($articles as $article):
+    foreach($videos as $video):
     ?>
-    <div class="wrap">
-        <div class="card-img">
-            <img src="<?=get_template_directory_uri().$article->image?>" alt="popular">
-        </div>
-        <div class="card">
-            <div class="card-title"><h4><?= $article->title?></h4></div>
-            <div class="card-author">
-                <small>By <?=$article->author.', '.$article->date?></small>
-            </div>
-        </div>
+    <div class="wrap" >
+        <video controls preload="none" poster="<?=get_template_directory_uri().'/assets/images/diabete.png' ?>">
+            <source src="<?= get_template_directory_uri().$video?>"  type="video/mp4">
+        </video>
     </div>
     <?php
     endforeach;
@@ -169,9 +163,11 @@ function article_video(){
     if( get_the_title() == $data[0]->title){
         $response->video= $data[0]->video;
         $response->placeholder=$data[0]->placeholder;
+        $response->playlist=$data[0]->playlist;
     }else if(get_the_title() == $data[1]->title){
         $response->video= $data[1]->video;
         $response->placeholder=$data[1]->placeholder;
+        $response->playlist=$data[1]->playlist;
     }else{
         $response->video= "none";
         $response->placeholder="none";

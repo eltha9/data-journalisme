@@ -23,9 +23,6 @@ get_header();
                 </svg>                    
     </button>
     <?php $post_data = article_video();
-    echo '<pre>';
-    var_dump(article_video());
-    echo '</pre>';
     ?>
 
     <div class="thumbnail" style="background-image: url('<?= get_template_directory_uri().$post_data->placeholder?>');"></div>
@@ -63,7 +60,7 @@ get_header();
         <div class="popular-title"><h2>Vidéo </h2></div>
         <div class="sidescroll">
 
-            <?php fake_articles_home()?>
+            <?php video_listing($post_data->playlist)?>
             
         </div>
     </div>

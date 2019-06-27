@@ -8,7 +8,9 @@
             <div class="popular-title"><h1>Nos video</h1></div>
             <div class="sidescroll">
 
-                <?php fake_articles_home()?>
+                <?php 
+                $video = json_decode(file_get_contents('wp-content/themes/customtheme/assets/data/video.json'));
+                video_listing($video);?>
                 
             </div>
         </div>

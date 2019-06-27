@@ -8,26 +8,18 @@
         "paragraphe": "L’asthme est une maladie fréquente qui touche plus de 4 millions de personnes en France. Une enquête nationale est effectuée tous les deux ans en milieu scolaire, qui indique une prévalence de la maladie allant de 10 à 16% chez les enfants, et baisse à 6,7% à l’âge adulte."
     },
     {
-        "author":"Thomas",
-        "date": 0,
-        "title": "L'angine ou les premiers signes de constipation ",
-        "image":"/assets/images/diabete.png",
-        "url": "none",
-        "paragraphe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
         "author":"Gaëtan",
         "date": 0,
-        "title": "Maladie chronique: les flatulences et l'incontinence",
-        "image":"/assets/images/diabete.png",
+        "title": "On lève le voile sur le lupus",
+        "image":"/assets/images/lupus.png",
         "url": "none",
         "paragraphe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
         "author":"Constance",
         "date": 0,
-        "title": "Comment un rhume peut devenir embêtant",
-        "image":"/assets/images/diabete.png",
+        "title": "Gare aux préjugés sur l'hémophilie !",
+        "image":"/assets/images/hemophilie.png",
         "url": "none",
         "paragraphe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
